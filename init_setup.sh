@@ -7,4 +7,5 @@ echo [$(date)]: "install requirements"
 pip install -r requirements.txt
 echo [$(date)]: "install PyTorch"
 conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch -y
+conda env export > env.yml
 echo [$(date)]: "END"
